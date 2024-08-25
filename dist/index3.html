@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Assignment</title>
+    <!-- Tailwind CSS CDN for styling (optional) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-gray-700 via blue-100 to-blue-700 p-10">
+
+    <div class="w-96 mt-20 mx-auto">
+        <label for="comment" class="block text-lg font-medium mb-2">Add a Comment</label>
+        <input type="text" id="comment" class="w-full p-2 border rounded mb-4" placeholder="Type your comment here">
+        <button id="addCommentBtn" class="bg-blue-500 text-white px-4 py-2 rounded-xl">Add Comment</button>
+
+        <label for="reply" class="block text-lg font-medium mt-6 mb-2">Add a Reply</label>
+        <input type="text" id="reply" class="w-full p-2 border rounded mb-4" placeholder="Select a comment above to reply">
+        <button id="addReplyBtn" class="bg-green-500 text-white px-4 py-2 rounded-xl">Add Reply</button>
+    </div>
+
+    <div class="w-2/3 mx-auto mt-10">
+        <h2 class="text-2xl font-semibold mb-4">Comments</h2>
+        <div id="commentsContainer" class="bg-white p-6 rounded shadow">
+            <!-- Comments will be rendered here -->
+            <p class="text-gray-500">No comments yet. Be the first to comment!</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script src="app.js"></script>
+</body>
+</html>
